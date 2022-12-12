@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Balaverso</title>
+	<link rel="stylesheet" type="text/css" href="css/estiloblog.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<script type="text/javascript" 
+	src="js/jquery-3.5.1.min.js"></script>
+ 
+
+	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="icon" href="imagens/favicon.png">
+
+    <!-- Javascript -->
+	
+</head>
+<body id="uma-coluna" class="javascript">
+	<!-- Início container -->
+	<div id="container">
+		<!-- Início Topo -->
+		<div id="topo">
+			<ul id="navegação">
+				<li class="primeiro">
+					<a id="home" href="index.html">Home</a></li>
+				<li>
+					<a id="python" href="python.html">Python</a></li>
+				<li>
+					<a id="powerbi" href="powerbi.html">PowerBI</a></li>
+				<li>
+					<a id="powerbi" href="mysql.html">MySQL</a></li>
+			</ul>
+		</div><!-- Fim Topo -->
+		<!-- Início conteudo -->
+		<div id="conteudo">
+			<div id="primario">
+				<div class="caixa destaque">
+					<h2>API de criptomoedas</h2>
+					<div class="caixa-conteudo">
+						<p>
+							API (Application Programming Interface) – É uma interface entre dois programas diferentes que se comunicam. Com ela terceiros disponibilizam uma interface de modo que possamos consumir um determinado serviço sem nos preocuparmos com a implementação.
+							Web Service é uma API projetada para se comunicar obrigatoriamente via rede. 
+							Ou seja, quando uma API precisa enviar dados através da rede, podemos chamar de Web Services.
+
+						</p>
+						<h3>CRUD</h3>
+						<img src="imagens/crud.jpg" width="40%">
+
+						<p>As quatro operações básicas de armazenamento formam o CRUD </p>
+					</div>
+					<ul id="lista-noticias">
+						<li>
+
+						</li>
+					</ul>
+					<h1>Criar Moeda </h1>
+					<p>Exemplo de Requisição para criar uma nova moeda: /moedas/{moeda_id} </p>
+					<p><h3>POST</h3> /moedas/matic </p>
+					<p><h3>Resposta</h3> Primeiro, a mensagem de sucesso ao criar pela primeira vez. Ao tentar criar novamente uma moeda com id “matic”, o sistema emite uma mensagem de erro, informando que o id já existe.</p>
+					<img src="imagens/criar.jpg" width="60%">
+				
+					<div id="conteudo"></div>
+				
+					<button acao-clique>POST</button>
+				
+					<script type="text/javascript">
+						
+						//$('p').hide(5000)
+						//let itens = $('ul').text()
+						//$('#conteudo').text( itens )
+						//$('li').addClass('destaque')
+						$('[acao-clique]').click(function() {
+							//$('ul').addClass('destaque')
+							//$('#conteudo').text( $('ul').text() )
+							$('p').toggle()
+						})
+				
+					</script>
+					<ul id="lista-noticias">
+						<li>
+
+						</li> 
+					</ul>
+					<h1>Consultar Moeda</h1>
+					<p>Requisição para listar todos as moedas do sistema, podendo opcionalmente receber filtros personalizados via path, de forma que se o cliente não definir nenhum parâmetro de consulta (nenhum filtro), os parâmetros receberão os valores padrão.  </p>
+					<p><h3>GET</h3> /moedas</p>
+					<p>Requisição para visualizar os dados de uma moeda específica. Faz-se um GET de /moedas/{moeda_id}  </p>
+					<p><h3>GET</h3> /moedas/btc</p>
+					<p><h3>Resposta</h3> Obtém-se um JSON com os dados da moeda requisitada.</p>
+					<img src="imagens/btc.jpg" width="60%">
+					<ul>
+						<li>	Requisição exemplo de quando o usuário pesquisar por uma moeda que não existe. </li>
+						<li><p><h3>GET</h3> /moeda/moeda_id_que_nao_existe</p></li>
+						<img src="imagens/notfound.jpg" width="60%">
+					</ul>
+				
+					<div id="conteudo"></div>
+				
+					<button acao-clique>GET</button>
+				
+					<script type="text/javascript">
+						
+						//$('p').hide(5000)
+						//let itens = $('ul').text()
+						//$('#conteudo').text( itens )
+						//$('li').addClass('destaque')
+						$('[acao-clique]').click(function() {
+							//$('ul').addClass('destaque')
+							//$('#conteudo').text( $('ul').text() )
+							$('p').toggle()
+						})
+				
+					</script>
+					<ul id="lista-noticias">
+						<li>
+
+						</li>
+					</ul>
+					<h1>Atualizar Moeda </h1>
+					<p>Exemplo de Requisição para atualizar um novo moeda: /moedas/{moeda_id} </p>
+					<p><h3>PUT</h3> /moedas/sand </p>
+					<p><h3>Resposta</h3> O PUT também consegue criar uma nova moeda, emitindo uma mensagem de 201 Created a primeira vez, e 200 OK a partir da segunda requisição de update. </p>
+					<img src="imagens/sand.jpg" width="60%">
+				
+					<div id="conteudo"></div>
+				
+					<button acao-clique>PUT</button>
+				
+					<script type="text/javascript">
+						
+						//$('p').hide(5000)
+						//let itens = $('ul').text()
+						//$('#conteudo').text( itens )
+						//$('li').addClass('destaque')
+						$('[acao-clique]').click(function() {
+							//$('ul').addClass('destaque')
+							//$('#conteudo').text( $('ul').text() )
+							$('p').toggle()
+						})
+				
+					</script>
+					<ul id="lista-noticias">
+						<li>
+
+						</li>
+					</ul>					
+					<h1>Deletar Moeda </h1>
+					<p>Exemplo de Requisição para deletar uma moeda: /moedas/{moeda_id} </p>
+					<p><h3>DELETE</h3> /moedas/eth </p>
+					<p><h3>Resposta</h3> Primeiro, a mensagem de sucesso ao deletar uma moeda existente. Depois, ao tentar deletar a mesma moeda, obtém-se o erro 404, informando que a moeda não existe. .</p>
+					<img src="imagens/deletar.jpg" width="60%">
+				
+					<div id="conteudo"></div>
+				
+					<button acao-clique>DELETE</button>
+				
+					<script type="text/javascript">
+						
+						//$('p').hide(5000)
+						//let itens = $('ul').text()
+						//$('#conteudo').text( itens )
+						//$('li').addClass('destaque')
+						$('[acao-clique]').click(function() {
+							//$('ul').addClass('destaque')
+							//$('#conteudo').text( $('ul').text() )
+							$('p').toggle()
+						})
+				
+					</script>
+					<ul id="lista-noticias">
+						<li>
+
+						</li> 
+					</ul>
+				</div>
+
+
+					
+
+				</div>
+
+
+			</div>
+
+
+		</div><!-- Fim conteudo -->
+	</div><!-- Fim container -->
+
+	<div id="container-rodape" style="clear: both;">
+		<div id="rodape">
+			&copy; Balacorp	
+		</div>
+			
+	</div>
+</body>
+</html>

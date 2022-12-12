@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Balaverso</title>
+	<link rel="stylesheet" type="text/css" href="css/estiloblog.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<script type="text/javascript" 
+	src="js/jquery-3.5.1.min.js"></script>
+ 
+
+	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="icon" href="imagens/favicon.png">
+
+    <!-- Javascript -->
+	
+</head>
+<body id="uma-coluna" class="javascript">
+	<!-- Início container -->
+	<div id="container">
+		<!-- Início Topo -->
+		<div id="topo">
+			<ul id="navegação">
+				<li class="primeiro">
+					<a id="home" href="index.html">Home</a></li>
+				<li>
+					<a id="python" href="python.html">Python</a></li>
+				<li>
+					<a id="powerbi" href="powerbi.html">PowerBI</a></li>
+				<li>
+					<a id="powerbi" href="mysql.html">MySQL</a></li>
+			</ul>
+		</div><!-- Fim Topo -->
+		<!-- Início conteudo -->
+		<div id="conteudo">
+			<div id="primario">
+				<div class="caixa destaque">
+					<h2>MySQL</h2>
+					<div class="caixa-conteudo">
+						<p>
+							Os bancos de dados são o coração de muitos sistemas, oferecendo segurança dos dados e agilidade nas buscas.<br/>
+Os objetivos de um sistema de banco de dados são o de isolar o usuário dos detalhes internos e promover a independência dos dados em relação às aplicações. O banco de dados é responsável pelo armazenamento e acumulação de dados devidamente codificados e tem como principal objetivo a transmissão das informações desejadas.<br/></p>
+						<p><h3>Base de Dados: </h3>Coleção de dados relacionados </p>
+						<p><h3>Dados:  </h3>Valor de um campo armazenado, matéria-prima para obtenção de informação</p>
+						<p>A maioria das aplicações desenvolvidas utilizam consultas para obter resultados.<br/>
+							Para isso usamos a linguagem SQL ela é a linguagem de operação padrão para banco de dados relacional.<br/>
+							A tabela abaixo foi criada usando o SGBD MySQL<br/>
+							<img src="imagens/tabela.jpg" width="40%">
+							</p>	
+					</div>
+					<ul id="lista-noticias">
+						<li>
+
+						</li>
+					</ul>
+					<h1>Queries</h1>
+					<p>Para começarmos a usar instruções no banco de dados precisamos criar um banco de dados</p>
+					<h3>CREATE DATABASE nomedobanco</h3><br/><br/>
+					<p>Temos o banco de dados, agora precisamos das tabelas, devemos usar o comando:</p>
+					<h3>USE nomedobanco</h3><br/><br/>
+					<p>Para criar uma tabela usamos o comando:</p>
+					<h3>CREATE TABLE nomedatabela</h3>
+					
+				
+					<ul id="lista-noticias">
+						<li>
+
+						</li> 
+					</ul>
+					<h1>SELECT</h1>
+					<h3>select count(*) FROM moedas.core_moeda</h3><br/><br/>
+			
+					<img src="imagens/count.jpg" width="15%">
+					<p>É muito usado o comando acima para saber a quantidade de linhas que a tabela possui.</p>
+					<p><h3>select count(*) FROM moedas.core_moeda WHERE id like 7</h3> <br/><br/>
+					<img src="imagens/count1.jpg" width="15%">
+					<p>WHERE condição – Limita a consulta às linhas que satisfazem a condição.</p>
+					
+					<p>A complexidade das consultas aumentam de acordo com a necessidde, por fins visuais vou me limitar aos exemplos acima</p>
+
+				</div>
+
+
+					
+
+				</div>
+
+
+			</div>
+
+
+		</div><!-- Fim conteudo -->
+	</div><!-- Fim container -->
+
+	<div id="container-rodape" style="clear: both;">
+		<div id="rodape">
+			&copy; Balacorp	
+		</div>
+			
+	</div>
+</body>
+</html>

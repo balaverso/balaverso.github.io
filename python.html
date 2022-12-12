@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Balablog</title>
+  <link rel="icon" href="imagens/favicon.png">
+  <link rel="stylesheet" type="text/css" href="css/estiloblog.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Javascript -->
+  <script type="text/javascript" src="js/script.js"></script>
+    
+</head>
+<body class="home">
+
+    <!-- Início container -->
+    <div id="container">
+      <!-- Início Topo -->
+      <div id="topo">
+              <!-- Logo -->
+        <a href="index.html" class="navbar-brand">
+          <img src="imagens/logo.png" width="142">
+        </a> 
+
+        <ul id="navegação ml-auto">
+          <li class="primeiro">
+            <a id="home" href="index.html">Home</a></li>
+          <li>
+            <a id="python" href="python.html">Python</a></li>
+          <li>
+            <a id="powerbi" href="powerbi.html">Powerbi</a></li>
+          <li>
+            <a id="powerbi" href="mysql.html">MySQL</a></li>
+        </ul>
+      </div><!-- Fim Topo -->
+      <!-- Início conteudo -->
+      <div id="conteudo">
+        <div id="primario">
+          <div class="caixa destaque">
+            <h2>Flask</h2>
+            <div class="caixa-conteudo">
+              <h3>API</h3>
+              <img src="imagens/moedass.jpg" width="100%">
+              <a href="api.html">Leia mais!</a>
+            </div>
+          </div>
+          <div class="caixa ">
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2>Moedas</h2>
+        
+                <div class="form-inline">
+                <input class="form-control mr-2" type="text" placeholder="Pesquise um nome" id="campoNome">
+        
+                <input  class="btn btn-primary mr-2" 
+                type="submit" value="Pesquisar"
+                onclick="pesquisarNome()">
+                
+                <input  class="btn btn-warning" 
+                type="submit" value="carregar"
+                onclick="carregarNomes()">
+                </div>
+        
+                <hr>
+        
+                <ul class="list-group" id="lista">
+                <li class="list-group-item">Nenhum nome...</li>
+                </ul>
+        
+              </div>
+            </div>
+          </div>  
+        </div>
+        
+        <div id="secundario">
+          <div class="caixa entrevista">
+            <h2>App</h2>
+            <div class="caixa-conteudo">
+              <h3>Notificação</h3>
+              <img src="imagens/notifica.jpg" width="100%">
+              <a href="app.html">Leia mais!</a>
+            </div>
+          </div>
+
+          <div class="caixa ">
+              <div class="row">
+                <div class="col-md-12 d-flex justify-content-center">
+      
+                <div class="card">
+                  <div class="card-body">
+                  <h2 class="card-title">Comprar Ethereum ou Bitcoin?</h2>
+                  <form>
+      
+                    <div class="form-group mr-2">
+                    <label for="alcool">Preço do Ethereum</label>
+                    <input type="text" placeholder="Digite o preço do Ethereum (ex: 2.20)" 
+                    class="form-control" id="alcool">
+                    </div>
+      
+                    <div class="form-group mr-2">
+                    <label for="alcool">Preço do Bitcoin</label>
+                    <input type="text" placeholder="Digite o preço do Bitcoin (ex: 20.50)" 
+                    class="form-control" id="gasolina">
+                    </div>
+      
+                    <div class="alert alert-primary" id="resultado">resultado</div>
+      
+                    <button type="button" class="btn btn-primary"
+                    onclick="calcularMelhorPreco()">Calcular</button>
+      
+                  </form>
+                  </div>
+                </div>
+      
+                </div>
+              </div>
+            </div>
+
+        
+        </div>
+        
+
+        
+
+        
+
+        <!-- Início lateral -->
+        <div id="lateral">
+
+          <div class="caixa">
+            <h2>Notebooks</h2>
+            <div class="caixa-conteudo">
+              <ul>
+                <li class="primeiro">
+          <li>
+            <a id="Consumindo" href="jupyter/Manipulando.html">Manipulando</a></li>            
+          <li>
+            <a id="Pyspark" href="jupyter/Consumindo.html">Consumindo</a></li>
+          <li>
+            <a id="Manipulando" href="jupyter/Pyspark.html">Pyspark</a></li>
+          <li>
+            <a id="SQLite" href="jupyter/Explorando.html">Explorando</a></li>
+          <li>
+            <a id="Agrupamento" href="jupyter/Series.html">Series Temporais</a></li>            
+          <li>
+            <a id="Series" href="jupyter/SQLite.html">SQLite</a></li>               
+              </ul>
+            </div>
+          </div> 
+                 
+      </div><!-- Fim conteudo -->
+    </div><!-- Fim container -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="imagens/vr.png" width="142">   
+          </div>
+        </div>
+      </div>
+      
+    </footer>
+      
+  </div>
+</body>
+</html>

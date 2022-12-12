@@ -10,11 +10,9 @@ html, body, #home {
 }
 
 body {
-	background: url(../imagens/capa.png),
-				url(../imagens/ruido.png),
-				linear-gradient(50deg,#ff4169,#7c2678);
+	font-family:  "Trebuchet MS", Helvetica, sans-serif;
+	background: linear-gradient(68.15deg, #dddfe2 16.62%, #34bdf8 85.61%);
 	background-attachement: fixed;
-	font-family: Helvetica,Arial,sans-serif;
 }
 
 /* Layout
@@ -49,6 +47,7 @@ nav.navbar-transparente {
 footer {
 	background:  #000;
 	padding:  50px 0px 20px 0px;
+	position:  relative;
 }
 
 footer h4 {
@@ -117,13 +116,6 @@ footer ul li {
 	padding: 10px 0;
 }
 
-/* Rodapá
----------------*/
-footer {
-	background: #000;
-	padding: 50px 0px 20px 0px;
-	position:  relative;
-}
 
 /* Tipografia
 ---------------*/
