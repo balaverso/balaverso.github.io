@@ -1,0 +1,146 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Balaverso</title>
+    <link rel="icon" href="img/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!-- Icon -->
+    <link rel="stylesheet" href="fonts/line-icons.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    
+    <!-- Animate -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script type="text/javascript" 
+    src="js/jquery-3.5.1.min.js"></script>
+
+  </head>
+  <body>
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a href="index.html" class="navbar-brand"><img src="img/logo.png" alt=""></a>       
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="lni-menu"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                  Início
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Hero Area Start -->
+      <div id="hero-area" class="hero-area-bg">
+        <div class="container">      
+          <div class="row">
+            <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+              <div class="contents">
+                <h2 class="head-title">🚀  REST API</h2>
+						<img src="img/rest/flask.jpg" width="50%">
+						<p>
+							API (Application Programming Interface) – É uma interface entre dois programas diferentes que se comunicam. Com ela terceiros disponibilizam uma interface de modo que possamos consumir um determinado serviço sem nos preocuparmos com a implementação.
+							Web Service é uma API projetada para se comunicar obrigatoriamente via rede. 
+							Ou seja, quando uma API precisa enviar dados através da rede, podemos chamar de Web Services.
+							Com o Postman fazemos essa comunicação através do get, post, update e delete.
+							<img src="img/rest/postman.png" width="150%">
+
+						</p><br/><br/>
+						<h3>CRUD</h3>
+						<img src="img/rest/crudd.jpg" width="60%">
+
+						<p>As quatro operações básicas de armazenamento formam o CRUD </p><br/><br/>
+
+						</li>
+					</ul>
+					<h1>Criar Moeda </h1>
+					<p>Exemplo de Requisição para criar uma nova moeda: /moedas/{moeda_id} </p>
+					<p><h3>POST</h3> /moedas/matic </p>
+					<p><h3>Resposta</h3> Primeiro, a mensagem de sucesso ao criar pela primeira vez. Ao tentar criar novamente uma moeda com id “matic”, o sistema emite uma mensagem de erro, informando que o id já existe.</p>
+					<img src="img/rest/criar.jpg" width="60%"></br></br></br>
+			
+					<h1>Consultar Moeda</h1>
+					<p>Requisição para listar todos as moedas do sistema, podendo opcionalmente receber filtros personalizados via path, de forma que se o cliente não definir nenhum parâmetro de consulta (nenhum filtro), os parâmetros receberão os valores padrão.  </p>
+					<p><h3>GET</h3> /moedas</p>
+					<p>Requisição para visualizar os dados de uma moeda específica. Faz-se um GET de /moedas/{moeda_id}  </p>
+					<p><h3>GET</h3> /moedas/btc</p>
+					<p><h3>Resposta</h3> Obtém-se um JSON com os dados da moeda requisitada.</p>
+					<img src="img/rest/btc.jpg" width="60%">
+					<ul>
+						<li>	Requisição exemplo de quando o usuário pesquisar por uma moeda que não existe. </li>
+						<li><p><h3>GET</h3> /moeda/moeda_id_que_nao_existe</p></li>
+						<img src="img/rest/notfound.jpg" width="60%">
+					</ul><br/><br/></br>
+
+					<h1>Atualizar Moeda </h1>
+					<p>Exemplo de Requisição para atualizar um novo moeda: /moedas/{moeda_id} </p>
+					<p><h3>PUT</h3> /moedas/sand </p>
+					<p><h3>Resposta</h3> O PUT também consegue criar uma nova moeda, emitindo uma mensagem de 201 Created a primeira vez, e 200 OK a partir da segunda requisição de update. </p>
+					<img src="img/rest/sand.jpg" width="60%"><br/><br/>			
+
+					<h1>Deletar Moeda </h1>
+					<p>Exemplo de Requisição para deletar uma moeda: /moedas/{moeda_id} </p>
+					<p><h3>DELETE</h3> /moedas/eth </p>
+					<p><h3>Resposta</h3> Primeiro, a mensagem de sucesso ao deletar uma moeda existente. Depois, ao tentar deletar a mesma moeda, obtém-se o erro 404, informando que a moeda não existe. .</p>
+					<img src="img/rest/deletar.jpg" width="60%">
+				
+					<div id="conteudo"></div>
+				
+					<button acao-clique>DELETE</button>
+				
+					<script type="text/javascript">
+						
+						//$('p').hide(5000)
+						//let itens = $('ul').text()
+						//$('#conteudo').text( itens )
+						//$('li').addClass('destaque')
+						$('[acao-clique]').click(function() {
+							//$('ul').addClass('destaque')
+							//$('#conteudo').text( $('ul').text() )
+							$('p').toggle()
+						})		
+					</script>
+				</div>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader" id="loader-1"></div>
+    </div>
+    <!-- End Preloader -->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/jquery.easing.min.js"></script>  
+    <script src="js/main.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.min.js"></script>
+      
+  </body>
+</html>
