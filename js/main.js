@@ -17,42 +17,6 @@
 /* 
 
 
-  /* Testimonials Carousel 
-  ========================================================*/
-    var owl = $("#testimonials");
-      owl.owlCarousel({
-        navigation: false,
-        pagination: true,
-        slideSpeed: 1000,
-        stopOnHover: true,
-        autoPlay: true,
-        items: 2,
-        itemsDesktop : [1199,2],
-        itemsDesktopSmall : [980,2],
-        itemsTablet: [768,1],
-        itemsTablet: [767,1],
-        itemsTabletSmall: [480,1],
-        itemsMobile : [479,1],
-      });   
-
-/* 
-   Touch Owl Carousel
-   ========================================================================== */
-    var owl = $(".touch-slider");
-    owl.owlCarousel({
-      navigation: false,
-      pagination: true,
-      slideSpeed: 1000,
-      stopOnHover: true,
-      autoPlay: true,
-      items: 1,
-      itemsDesktopSmall: [1024, 1],
-      itemsTablet: [600, 1],
-      itemsMobile: [479, 1]
-    });
-
-    $('.touch-slider').find('.owl-prev').html('<i class="lni-chevron-left"></i>');
-    $('.touch-slider').find('.owl-next').html('<i class="lni-chevron-right"></i>');
 
 /* 
    Sticky Nav
